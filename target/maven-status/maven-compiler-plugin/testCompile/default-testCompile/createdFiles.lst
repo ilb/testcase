@@ -1,0 +1,5 @@
+ru/ilb/debtaccounting/testcase/ODSTestCaseTest.class
+ru/ilb/debtaccounting/testcase/TableParserTest.class
+ru/ilb/debtaccounting/testcase/ValueConverterTest.class
+ru/ilb/debtaccounting/testcase/AccrueTestCaseTest.class
+ru/ilb/debtaccounting/filerepository/FileWriterImplTest.class
