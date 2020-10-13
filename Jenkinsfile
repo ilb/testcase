@@ -19,7 +19,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'mvn install deploy'
+                sh 'mvn -P proc install deploy'
             }
         }
         stage("Release") {
