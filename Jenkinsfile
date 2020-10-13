@@ -19,7 +19,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'mvn -P proc install deploy'
+                sh 'mvn install deploy'
             }
         }
         stage("Release") {
@@ -27,8 +27,8 @@ pipeline {
                 expression { params.RELEASE }
             }
             steps {
-                sh "mvn -P proc -B release:prepare"
-    		sh "mvn -P proc -B release:perform"
+                sh "mvn -B release:prepare"
+    		sh "mvn -B release:perform"
                 }
             }
     }
