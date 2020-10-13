@@ -27,8 +27,8 @@ pipeline {
                 expression { params.RELEASE }
             }
             steps {
-                sh "mvn -B release:prepare"
-    		sh "mvn -B release:perform"
+                sh "mvn -P proc -B release:prepare"
+    		sh "mvn -P proc -B release:perform"
                 }
             }
     }
