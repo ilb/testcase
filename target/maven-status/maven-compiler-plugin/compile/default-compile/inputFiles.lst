@@ -1,0 +1,14 @@
+/home/safargalin/work/debtaccounting/debtaccounting-testcase/src/main/java/ru/ilb/debtaccounting/testcase/ValueConverter.java
+/home/safargalin/work/debtaccounting/debtaccounting-testcase/src/main/java/ru/ilb/debtaccounting/testcase/ODSTestCase.java
+/home/safargalin/work/debtaccounting/debtaccounting-testcase/src/main/java/ru/ilb/debtaccounting/testcase/AccrueTestCase.java
+/home/safargalin/work/debtaccounting/debtaccounting-testcase/src/main/java/ru/ilb/debtaccounting/filerepository/FileWriterImpl.java
+/home/safargalin/work/debtaccounting/debtaccounting-testcase/src/main/java/ru/ilb/debtaccounting/filerepository/TableParserImpl.java
+/home/safargalin/work/debtaccounting/debtaccounting-testcase/src/main/java/ru/ilb/debtaccounting/filerepository/TableParserFactory.java
+/home/safargalin/work/debtaccounting/debtaccounting-testcase/src/main/java/ru/ilb/debtaccounting/filerepository/TableParser.java
+/home/safargalin/work/debtaccounting/debtaccounting-testcase/src/main/java/ru/ilb/debtaccounting/filerepository/TableParserFactoryImpl.java
+/home/safargalin/work/debtaccounting/debtaccounting-testcase/src/main/java/ru/ilb/debtaccounting/testcase/TableTestParser.java
+/home/safargalin/work/debtaccounting/debtaccounting-testcase/src/main/java/ru/ilb/debtaccounting/testcase/TestCase.java
+/home/safargalin/work/debtaccounting/debtaccounting-testcase/src/main/java/ru/ilb/debtaccounting/testcase/CalculationTableNotFoundException.java
+/home/safargalin/work/debtaccounting/debtaccounting-testcase/src/main/java/ru/ilb/debtaccounting/filerepository/FileWriter.java
+/home/safargalin/work/debtaccounting/debtaccounting-testcase/src/main/java/ru/ilb/debtaccounting/testcase/InputDataNotFoundException.java
+/home/safargalin/work/debtaccounting/debtaccounting-testcase/src/main/java/ru/ilb/debtaccounting/filerepository/NullFileException.java
