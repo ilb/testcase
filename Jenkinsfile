@@ -1,21 +1,19 @@
 pipeline {
     agent any
-        parameters {
-            booleanParam(name: "RELEASE",
-                    description: "Build a release from current commit.",
-                    defaultValue: false)
-        }
-        options {
-            disableConcurrentBuilds()
-            buildDiscarder(logRotator(numToKeepStr: '3'))
-        }
+    parameters {
+        booleanParam(name: "RELEASE",
+                description: "Build a release from current commit.",
+                defaultValue: false)
+    }
+    options {
+        disableConcurrentBuilds()
+        buildDiscarder(logRotator(numToKeepStr: '3'))
+    }
     stages {
         stage ('Build') {
             when {
                 not {
-                    expression {
-                        sh(returnStdout: true, script: "git tag --contains | head -1").trim()
-                    }
+                    expression { params.RELEASE }
                 }
             }
             steps {
@@ -28,9 +26,12 @@ pipeline {
             }
             steps {
                 sh "mvn -B release:prepare"
-    		sh "mvn -B release:perform"
+                sh "mvn -B release:perform"
+                dir ("target/checkout") {
+                    sh "mvn -P'!local-repository,sonatype-repository,release-profile' deploy"
                 }
             }
+        }
     }
     post {
         always {
