@@ -19,7 +19,7 @@ pipeline {
             steps {
                 dir("testcase") {
                     sh 'mvn install deploy'
-                    sh 'sudo /opt/bin/tomcatmavendeploy /var/lib/tomcat-8/testcase/webapps/testcase.mavendeploy'
+                        sh 'sudo /opt/bin/tomcatmavendeploy /var/lib/tomcat-8/testcase/webapps/testcase.mavendeploy'
                 }
             }
         }
