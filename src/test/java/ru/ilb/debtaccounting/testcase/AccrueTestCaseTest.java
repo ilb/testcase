@@ -15,6 +15,7 @@
  */
 package ru.ilb.debtaccounting.testcase;
 
+import ru.ilb.testcase.AccrueTestCase;
 import java.io.IOException;
 import java.io.InputStream;
 import java.time.LocalDate;

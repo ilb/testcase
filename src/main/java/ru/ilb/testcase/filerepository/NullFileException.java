@@ -13,31 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ru.ilb.debtaccounting.filerepository;
-
-import com.github.miachm.sods.SpreadSheet;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
+package ru.ilb.testcase.filerepository;
 
 /**
  *
  * @author safargalin
  */
-public class TableParserFactoryImpl implements TableParserFactory {
+public class NullFileException extends RuntimeException{
 
-    @Override
-    public TableParser getTableParser(File file) throws IOException{
-            return new TableParserImpl(file);
+    public NullFileException(){
+        super("File not found");
     }
 
-    @Override
-    public TableParser getTableParser(InputStream in) throws IOException{
-         return new TableParserImpl(in);
-    }
-
-    @Override
-    public TableParser getTableParser(SpreadSheet sheet){
-         return new TableParserImpl(sheet);
-    }
 }

@@ -15,6 +15,7 @@
  */
 package ru.ilb.debtaccounting.testcase;
 
+import ru.ilb.testcase.ValueConverter;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

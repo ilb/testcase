@@ -18,9 +18,9 @@ package ru.ilb.debtaccounting.testcase;
 import java.io.IOException;
 import java.util.Map;
 import org.junit.jupiter.api.Test;
-import ru.ilb.debtaccounting.filerepository.TableParser;
-import ru.ilb.debtaccounting.filerepository.TableParserFactory;
-import ru.ilb.debtaccounting.filerepository.TableParserFactoryImpl;
+import ru.ilb.testcase.filerepository.TableParser;
+import ru.ilb.testcase.filerepository.TableParserFactory;
+import ru.ilb.testcase.filerepository.TableParserFactoryImpl;
 
 /**
  *

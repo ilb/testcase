@@ -13,22 +13,31 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ru.ilb.debtaccounting.filerepository;
+package ru.ilb.testcase.filerepository;
 
-import java.util.Map;
+import com.github.miachm.sods.SpreadSheet;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  *
  * @author safargalin
  */
-public interface TableParser {
+public class TableParserFactoryImpl implements TableParserFactory {
 
-    public Map<String, Object[]> getTable(int pageNumber, String TableName);
+    @Override
+    public TableParser getTableParser(File file) throws IOException{
+            return new TableParserImpl(file);
+    }
 
-    public Map<String, Object[]> getTable(String pageName, String TableName);
+    @Override
+    public TableParser getTableParser(InputStream in) throws IOException{
+         return new TableParserImpl(in);
+    }
 
-    public int getMaxPages();
-
-    public int getSize(Map<String, Object[]> table);
-
+    @Override
+    public TableParser getTableParser(SpreadSheet sheet){
+         return new TableParserImpl(sheet);
+    }
 }

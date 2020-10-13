@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ru.ilb.debtaccounting.filerepository;
+package ru.ilb.testcase.filerepository;
 
 import com.github.miachm.sods.Range;
 import com.github.miachm.sods.Sheet;
@@ -26,7 +26,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import ru.ilb.debtaccounting.testcase.InputDataNotFoundException;
+import ru.ilb.testcase.InputDataNotFoundException;
 
 /**
  *

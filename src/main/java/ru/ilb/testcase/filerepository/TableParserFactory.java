@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 slavb.
+ * Copyright 2020 safargalin.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,16 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ru.ilb.debtaccounting.testcase;
+package ru.ilb.testcase.filerepository;
+
+import com.github.miachm.sods.SpreadSheet;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  *
- * @author slavb
+ * @author safargalin
  */
-public class CalculationTableNotFoundException extends RuntimeException{
+public interface TableParserFactory {
 
-    public CalculationTableNotFoundException() {
-        super("Calculation table not found");
-    }
+    public TableParser getTableParser(File file) throws IOException;
+
+    public TableParser getTableParser(InputStream in) throws IOException;
+
+    public TableParser getTableParser(SpreadSheet sheet);
 
 }
