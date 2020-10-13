@@ -31,7 +31,5 @@ public interface TableParserFactory {
     public TableParser getTableParser(InputStream in) throws IOException;
 
     public TableParser getTableParser(SpreadSheet sheet);
-    
-    public FileWriter getFileWriter();
 
 }

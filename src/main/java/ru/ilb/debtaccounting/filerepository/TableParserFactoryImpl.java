@@ -40,10 +40,4 @@ public class TableParserFactoryImpl implements TableParserFactory {
     public TableParser getTableParser(SpreadSheet sheet){
          return new TableParserImpl(sheet);
     }
-
-    @Override
-    public FileWriter getFileWriter() {
-        return new FileWriterImpl();
-    }
-
 }

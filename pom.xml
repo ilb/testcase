@@ -51,17 +51,5 @@
             <scope>test</scope>
             <type>jar</type>
         </dependency>
-        <dependency>
-            <groupId>ru.ilb.debtaccounting</groupId>
-            <artifactId>debtaccounting-api</artifactId>
-            <version>1.1-SNAPSHOT</version>
-            <type>jar</type>
-        </dependency>
-        <dependency>
-            <groupId>ru.ilb.debtaccounting</groupId>
-            <artifactId>debtaccounting-model</artifactId>
-            <version>1.1-SNAPSHOT</version>
-            <type>jar</type>
-        </dependency>
     </dependencies>
 </project>
