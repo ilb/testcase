@@ -5,6 +5,23 @@
     <version>1.1-SNAPSHOT</version>
     <artifactId>testcase</artifactId>
     <packaging>jar</packaging>
+    <scm>
+        <connection>scm:git:https://git.ilb.ru/ilb.ru/testcase.git</connection>
+        <url>https://git.ilb.ru/ilb.ru/testcase</url>
+        <tag>HEAD</tag>
+    </scm>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <name>Sonatype Nexus snapshot repository</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <name>Sonatype Nexus release repository</name>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
