@@ -17,7 +17,7 @@ pipeline {
                 }
             }
             steps {
-                dir("testcase") {
+                dir("bankruptmanagement") {
                     sh 'mvn -P proc install deploy'
                     sh 'sudo /opt/bin/tomcatmavendeploy /var/lib/tomcat-8/testcase/webapps/testcase.mavendeploy'
                 }
