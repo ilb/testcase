@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <groupId>ru.ilb.testcase</groupId>
     <modelVersion>4.0.0</modelVersion>
-    <version>1.4-SNAPSHOT</version>
+    <version>1.4</version>
     <artifactId>testcase</artifactId>
     <packaging>jar</packaging>
     <scm>
         <connection>scm:git:https://git.ilb.ru/ilb.ru/testcase.git</connection>
         <url>https://git.ilb.ru/ilb.ru/testcase</url>
-        <tag>HEAD</tag>
+        <tag>testcase-1.4</tag>
     </scm>
     <distributionManagement>
         <repository>
